@@ -206,13 +206,27 @@
 
 # p my_hash
 
-family = {  uncles: ["bob", "joe", "steve"],
-    sisters: ["jane", "jill", "beth"],
-    brothers: ["frank","rob","david"],
-    aunts: ["mary","sally","susan"]
-  }
+# family = {  uncles: ["bob", "joe", "steve"],
+#     sisters: ["jane", "jill", "beth"],
+#     brothers: ["frank","rob","david"],
+#     aunts: ["mary","sally","susan"]
+#   }
 
-p family[:sisters]
+# p family[:sisters]
+
+# def greeting(name)
+#   "Hi #{name}"
+# end
+
+# puts greeting("Cyano")
+
+def scream(words)
+  words = words + "!!!!"
+  # return
+  puts words
+end
+
+scream("Yippeee")
 
 
 
