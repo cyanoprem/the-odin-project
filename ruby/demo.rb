@@ -188,9 +188,31 @@
 # puts string[11]
 # puts string[19]
 
-arr = [15, 7, 18, 5, 12, 8, 5, 1]
+# arr = [15, 7, 18, 5, 12, 8, 5, 1]
 
-p arr.map { |e| e + 2}
-p arr
+# p arr.map { |e| e + 2}
+# p arr
+
+# my_hash = {
+#     "a random word" => "ahoy",
+#     "an array" => [1, 2, 3],
+#     "an empty hash" => {}
+# }
+
+# my_hash["an empty hash"] = {
+#     1 => "one",
+#     2 => "two"
+# }
+
+# p my_hash
+
+family = {  uncles: ["bob", "joe", "steve"],
+    sisters: ["jane", "jill", "beth"],
+    brothers: ["frank","rob","david"],
+    aunts: ["mary","sally","susan"]
+  }
+
+p family[:sisters]
+
 
 
