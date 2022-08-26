@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # scope.rb
 
 # a = 5             # variable is initialized in the outer scope
@@ -10,7 +12,7 @@
 # puts a
 # puts b
 
-#name.rb
+# name.rb
 # puts "What is your first name?"
 # first_name = gets.chomp
 # puts "What is your second name?"
@@ -21,17 +23,15 @@
 
 # puts "How old are you?"
 # age = gets.chomp
-# puts "In 10 years you will be: #{age.to_i + 10}" 
+# puts "In 10 years you will be: #{age.to_i + 10}"
 # puts "In 20 years you will be: #{age.to_i + 20}"
-# puts "In 30 years you will be: #{age.to_i + 30}"  
-
+# puts "In 30 years you will be: #{age.to_i + 30}"
 
 # x = 0
 # 3.times do
 #   x += 1
 # end
 # puts x
-
 
 # y = 0
 # 3.times do
@@ -49,7 +49,6 @@
 # puts per.upcase
 
 # print "Learning to code is FUN!"
-
 
 # if per == "CYANO"
 #     puts "Yesss"
@@ -94,7 +93,6 @@
 #   fml = true
 # end
 
-
 # age = 19
 # puts "Welcome to a life of debt." unless age < 18
 
@@ -113,9 +111,6 @@
 # ==, != - Equality
 # && - Logical AND
 # || - Logical OR
-
-
-
 
 # ------ Loops --------------
 
@@ -151,7 +146,6 @@
 # 5.upto(10) {|num| print "#{num}"}
 
 # 10.downto(5) {|num| puts "#{num}"}
-
 
 # ---------- Array -------------
 
@@ -221,12 +215,25 @@
 # puts greeting("Cyano")
 
 def scream(words)
-  words = words + "!!!!"
+  words += '!!!!'
   # return
   puts words
 end
 
-scream("Yippeee")
+scream('Yippeee')
 
+# Debugging with pry-byebug
 
+# require 'pry-byebug'
 
+# def isogram?(string)
+#   original_length = string.length
+#   string_array = string.downcase.split
+
+#   binding.pry
+
+#   unique_length = string_array.uniq.length
+#   original_length == unique_length
+# end
+
+# isogram?("Odin")
