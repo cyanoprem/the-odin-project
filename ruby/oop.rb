@@ -161,10 +161,14 @@ class Insect
 #   Create a Lamp class with a class method called about_me that returns the String "We brighten up people's lives".
 
 class Lamp
-    self.about_me ()
-        returns "We brighten up people's lives"
-    end
+
+  self.about_me ()
+      returns "We brighten up people's lives"
+  end
+
 end
+
+
 
 # Add a method to the WaterBottle class that returns the size of the WaterBottle and demonstrate how this method can be used.
 
@@ -181,7 +185,8 @@ class WaterBottle
       @age = age
     end
 
-  end
+end
+
 
 tupperware = WaterBottle.new(14)
 
